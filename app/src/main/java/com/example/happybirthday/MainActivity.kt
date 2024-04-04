@@ -37,7 +37,7 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
 //                        GreetingText("Happy Birthday Sharlene!" "From Leslie")
-                    GreetingImage(message = "Happy Birthday Sharlene!", from ="From Leslie" )
+                    GreetingImage(message = "Happy Birthday Recipient!", from ="From Sender" )
                 }
             }
         }
@@ -77,8 +77,8 @@ fun GreetingImage(message: String, from: String, modifier: Modifier = Modifier){
             contentDescription = null,
             contentScale = ContentScale.Crop
         )
-        GreetingText(message = "Happy Birthday Sharlene!",
-            from ="From Leslie",
+        GreetingText(message = "Happy Birthday Recipient!",
+            from ="From Sender",
             modifier = Modifier.fillMaxWidth()
                 .padding(8.dp))
     }
@@ -96,7 +96,7 @@ fun BirthdayCardPreview() {
             modifier = Modifier.padding(8.dp)
         ){
 //            GreetingText("Happy Birthday", "Sharlene", 90.sp, 100.sp,"From Leslie")
-            GreetingImage(message = "Happy Birthday Sharlene!", from = "From Leslie")
+            GreetingImage(message = "Happy Birthday Recipient!", from = "From Sender")
         }
     }
 }
